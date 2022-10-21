@@ -1,0 +1,19 @@
+CREATE x
+WRITE x (3)
+CREATE y
+WRITE y (4)
+MAP x (to)
+MAP y (to)
+SECTION GPU KERNEL
+WRITE x (0)
+WRITE y (READ y + 1)
+WRITE x (1)
+WRITE y (READ y + 1)
+WRITE x (0)
+WRITE y (READ y + 1)
+WRITE x (1)
+WRITE y (READ y + 1)
+WRITE x (0)
+WRITE y (READ y + 1)
+SECTION GPU KERNEL
+READ x

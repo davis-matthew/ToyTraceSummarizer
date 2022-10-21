@@ -1,0 +1,54 @@
+CREATE arr[10]
+CREATE x
+WRITE x 0
+
+CREATE i
+WRITE i 0
+SECTION
+WRITE arr[0] (READ i)
+WRITE i (READ i + 1)
+WRITE arr[1] (READ i)
+WRITE i (READ i + 1)
+WRITE arr[2] (READ i)
+WRITE i (READ i + 1)
+WRITE arr[3] (READ i)
+WRITE i (READ i + 1)
+WRITE arr[4] (READ i)
+WRITE i (READ i + 1)
+WRITE arr[5] (READ i)
+WRITE i (READ i + 1)
+WRITE arr[6] (READ i)
+WRITE i (READ i + 1)
+WRITE arr[7] (READ i)
+WRITE i (READ i + 1)
+WRITE arr[8] (READ i)
+WRITE i (READ i + 1)
+WRITE arr[9] (READ i)
+WRITE i (READ i + 1)
+SECTION
+
+WRITE i 0
+SECTION
+WRITE x (READ x + READ arr[0])
+WRITE i (READ i + 1)
+WRITE x (READ x + READ arr[1])
+WRITE i (READ i + 1)
+WRITE x (READ x + READ arr[2])
+WRITE i (READ i + 1)
+WRITE x (READ x + READ arr[3])
+WRITE i (READ i + 1)
+WRITE x (READ x + READ arr[4])
+WRITE i (READ i + 1)
+WRITE x (READ x + READ arr[5])
+WRITE i (READ i + 1)
+WRITE x (READ x + READ arr[6])
+WRITE i (READ i + 1)
+WRITE x (READ x + READ arr[7])
+WRITE i (READ i + 1)
+WRITE x (READ x + READ arr[8])
+WRITE i (READ i + 1)
+WRITE x (READ x + READ arr[9])
+WRITE i (READ i + 1)
+SECTION
+
+READ x
